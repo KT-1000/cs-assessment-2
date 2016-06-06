@@ -1,0 +1,57 @@
+Recursion
+
+1. In your own words, what is Recursion? When a function calls itself, as opposed to iterative when you'd use a loop.
+2. Why is it necessary to have a Base Case? Working toward a base case simplifies the problem by providing a stopping point.
+
+Graphs
+
+1. What is a Graph? Collections of nodes (which can be  related directionally or non-directionally) containing cycles (loops).
+2. How is a Graph different from a Tree? The relationship between nodes in a Tree must be directional whereas relationships between nodes in a Graph can be either directional or non-directional. Trees do not contain cycles.
+3. Give an example of something that would be good to model with a Graph. A Markov Chain.
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure	        Index   Search	Add-R	Add-L	Pop-L	Pop-R
+Python List(Array)	    O(1)	O(n)	O(1)    O(n)    O(n)    O(1)
+Linked List             O(n)    O(n)    O(n)    O(1)    O(1)    O(1)
+Doubly-Linked List      O(n)    O(n)    O(1)    O(1)    O(1)    O(1)
+Queue (as Array)	    X	    X	 	X	 	X       O(n)    O(1)
+Queue (as LL or DLL)	X	    X	 	X	 	X       O(1)    O(1)
+Stack(Array, LL, or DLL)X	    X	 	X	    X       O(1)    O(1)
+Deque (as DLL)	        X	    X
+
+Fill in Runtime and Memory:
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add     Delete      Iterate     Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)        O(n)        medium
+Set (Hash Map)          O(1)    O(1)    O(1)        O(n)        medium
+Binary Search Tree      O(log n)O(n)    O(n)        O(1)        a little
+Tree                    O(n)    O(1)    O(1)        O(1)        a little
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+Starting at the beginning of an iterable, compare the first and second values and move the bigger to the right. Continue through, comparing the next two values and moving the larger to the right.
+At the end, go back to the start and run through again, comparing each two and moving the bigger to the right.
+Repeat as many times as necessary, larger values "bubbling" to the top, until your iterable is fully sorted.
+
+Describe in words how the Merge Sort algorithm works.
+Merge sort takes two pre-sorted lists, creates a new empty list, compares the first element of each sorted list and adds the lower to the empty list.
+It goes through comparing elements in each list until one of the original lists is empty.
+Then it appends the remaining items from the other original list to the new list.
+
+Describe in words how the Quick Sort algorithm works.
+Basically like a Hungarian dancing video. You pick a pivot and move all the numbers lower than the pivot number to the beginning of the list, and all those larger than the pivot to the right of it.
+
+Git Branching
+
+1. Give an instance when you would use git branching.
+Say you wanted to crap out a small feature, but did not want to mess up your master. Make a new branch for the new feature!
+2. What is a pull request?
+You're asking the master to pull your code back on in. But way more formal than that in an actual company.
